@@ -1,0 +1,40 @@
+(kicad_sch
+	(version 20231120)
+	(generator "codex")
+	(generator_version "1.0")
+	(uuid "aad1850f-5349-46dd-a6db-8aa2d79fa47a")
+	(paper "A4")
+	(lib_symbols)
+	(text
+		(at 50 50 0)
+		(effects
+			(font (size 3 3) (thickness 0.5) bold)
+			(justify left)
+		)
+		(uuid "83243615-cca1-41a5-89aa-b8dfb60c85da")
+		"ROVE-SV — PLACEHOLDER"
+	)
+	(text
+		(at 50 58 0)
+		(effects
+			(font (size 1.8 1.8))
+			(justify left)
+		)
+		(uuid "62229a89-c06d-4408-a006-b1c053709498")
+		"Features: DC motor, Servo x2, INMP441 I2S mic, LiPo charging, USB-C"
+	)
+	(text
+		(at 50 64 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left)
+		)
+		(uuid "60c778bd-a18f-41f9-8fe1-528b9348a656")
+		"Base design: derive from rove_v (ROVE-V) schematic"
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

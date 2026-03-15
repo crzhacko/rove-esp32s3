@@ -1,0 +1,40 @@
+(kicad_sch
+	(version 20231120)
+	(generator "codex")
+	(generator_version "1.0")
+	(uuid "12a722d1-52f0-494d-acb5-768dcee1cd3f")
+	(paper "A4")
+	(lib_symbols)
+	(text
+		(at 50 50 0)
+		(effects
+			(font (size 3 3) (thickness 0.5) bold)
+			(justify left)
+		)
+		(uuid "dced46b7-ffa1-4d05-afa0-9d5efdecec63")
+		"ROVE — PLACEHOLDER"
+	)
+	(text
+		(at 50 58 0)
+		(effects
+			(font (size 1.8 1.8))
+			(justify left)
+		)
+		(uuid "d165fcce-492d-41d1-898d-06080389ac86")
+		"Features: DC motor (DRV8833), LiPo charging, USB-C"
+	)
+	(text
+		(at 50 64 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left)
+		)
+		(uuid "7ed9df15-f8f0-466d-baae-52cf254a28dd")
+		"Base design: derive from rove_v (ROVE-V) schematic"
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

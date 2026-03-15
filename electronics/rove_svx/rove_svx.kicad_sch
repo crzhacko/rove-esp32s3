@@ -1,0 +1,40 @@
+(kicad_sch
+	(version 20231120)
+	(generator "codex")
+	(generator_version "1.0")
+	(uuid "0f620fd3-bc60-4a12-b49d-d5c0bc49e5be")
+	(paper "A4")
+	(lib_symbols)
+	(text
+		(at 50 50 0)
+		(effects
+			(font (size 3 3) (thickness 0.5) bold)
+			(justify left)
+		)
+		(uuid "24c26e59-7403-4600-8b1c-4438cad682f7")
+		"ROVE-SVX — PLACEHOLDER"
+	)
+	(text
+		(at 50 58 0)
+		(effects
+			(font (size 1.8 1.8))
+			(justify left)
+		)
+		(uuid "4898121d-88bd-423a-a66a-dc8c681f621e")
+		"Features: DC motor, Servo x2, INMP441 I2S mic, GPIO expansion header, LiPo charging, USB-C"
+	)
+	(text
+		(at 50 64 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left)
+		)
+		(uuid "aed8f4d3-7f20-47ed-bdd1-ffda8a251cf1")
+		"Base design: derive from rove_v (ROVE-V) schematic"
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

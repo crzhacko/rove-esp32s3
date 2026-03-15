@@ -1,0 +1,12 @@
+# ESP-IDF build artifacts
+firmware/build/
+firmware/sdkconfig
+firmware/managed_components/
+firmware/.idf_cmake_build_type
+**/__pycache__/
+*.pyc
+
+# KiCad auto-generated
+electronics/**/*-backups/
+electronics/**/*.kicad_prl
+electronics/**/*.000

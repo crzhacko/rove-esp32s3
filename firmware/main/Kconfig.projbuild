@@ -1,0 +1,21 @@
+menu "ROVE Board Variant"
+
+    choice ROVE_VARIANT
+        prompt "Board variant"
+        default ROVE_VARIANT_ROVE_V
+        help
+            Select the ROVE hardware variant being flashed.
+
+        config ROVE_VARIANT_ROVE
+            bool "ROVE  (motors only)"
+        config ROVE_VARIANT_ROVE_S
+            bool "ROVE-S  (motors + servos)"
+        config ROVE_VARIANT_ROVE_V
+            bool "ROVE-V  (motors + voice)"
+        config ROVE_VARIANT_ROVE_SV
+            bool "ROVE-SV  (motors + servos + voice)"
+        config ROVE_VARIANT_ROVE_SVX
+            bool "ROVE-SVX (motors + servos + voice + extras)"
+    endchoice
+
+endmenu
