@@ -10,3 +10,43 @@ firmware/.idf_cmake_build_type
 electronics/**/*-backups/
 electronics/**/*.kicad_prl
 electronics/**/*.000
+electronics/**/*.bak_*
+electronics/**/*.lck
+electronics/**/*~
+electronics/**/*.dsn
+electronics/**/*.ses
+electronics/**/*.fp-info-cache
+electronics/**/fp-info-cache
+electronics/**/logs/
+
+# freerouting
+freerouting.json
+*.dsn
+*.ses
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# logs
+logs/
+
+# KiCad DRC intermediate files (keep only drc_clean_final.txt)
+electronics/**/drc/drc_*.json
+electronics/**/drc/drc_batch*.txt
+electronics/**/drc/drc_r[0-9]*.txt
+electronics/**/drc/drc_v[0-9]*.txt
+electronics/**/drc/drc_vbatfix.txt
+electronics/**/drc/drc_via_moves.txt
+electronics/**/drc/drc_with_dru.txt
+electronics/**/drc/drc_j2fix.txt
+electronics/**/drc/drc_drvsleep_fix.txt
+electronics/**/drc/drc_trackfix.json
+
+# Gerber intermediate files (keep only final zip + standard layer files)
+electronics/**/gerbers/*_r[0-9].zip
+electronics/**/gerbers/*_r[0-9][0-9].zip
+electronics/**/gerbers/*.gbr
+electronics/**/gerbers/*.drl
+electronics/**/gerbers/*.pos
+electronics/**/gerbers/*.gbrjob
