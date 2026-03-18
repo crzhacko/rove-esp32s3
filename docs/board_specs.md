@@ -15,11 +15,11 @@ ROVE는 ESP32-S3-WROOM-1 기반의 오프라인 음성 제어 RC카 플랫폼입
 | 서보 제어         |      | ✓      |        | ✓       | ✓        |
 | 음성 인식 (I2S)   |      |        | ✓      | ✓       | ✓        |
 | 확장 기능         |      |        |        |         | ✓ (TBD)  |
-| 온보드 LiPo 충전  |      |        | ✗      | (계획)  | (계획)   |
-| 배터리 보호 회로  |      |        | ✓      | (계획)  | (계획)   |
-| 배터리 전압 모니터|      |        | ✓      | (계획)  | (계획)   |
-| PCB 상태          | placeholder | placeholder | **완성** | placeholder | placeholder |
-| 보드 크기         | TBD  | TBD    | 60×50mm| TBD     | TBD      |
+| 온보드 LiPo 충전  |      |        | ✗      | ✗       | (계획)   |
+| 배터리 보호 회로  |      |        | ✓      | ✓       | (계획)   |
+| 배터리 전압 모니터|      |        | ✓      | ✓       | (계획)   |
+| PCB 상태          | placeholder | placeholder | **완성** | **완성 R1** | placeholder |
+| 보드 크기         | TBD  | TBD    | 60×50mm| 60×50mm | TBD      |
 | PSRAM 필수        |      |        | ✓      | ✓       | ✓        |
 
 ---
@@ -358,38 +358,79 @@ CONFIG_SPIRAM_SPEED_80M=y
 
 ---
 
-## ROVE-SV — 서보 + 음성 복합형
+## ROVE-SV — 서보 + 음성 복합형 (R1 완성)
 
 ### 개요
-ROVE-S (서보)와 ROVE-V (음성)의 기능을 통합한 variant.
-음성 명령으로 주행과 굴삭기 팔(붐/버킷)을 동시에 제어.
+ROVE-V를 기반으로 서보 출력 2채널을 추가한 variant.
+음성 명령으로 주행 + 굴삭기 팔(붐/버킷)을 동시에 제어.
+ROVE-V PCB에서 파생 — 동일한 60×50mm 레이아웃에 J5/J6 서보 커넥터 추가.
 
 ### 하드웨어 사양
 
-| 항목          | 사양                                  |
-|---------------|---------------------------------------|
-| MCU           | ESP32-S3-WROOM-1-N16R8                |
-| 모터 드라이버  | DRV8833PW                            |
-| 마이크        | INMP441 I2S MEMS                     |
-| 서보 채널     | 2채널 (GPIO 6, 7 LEDC PWM)           |
-| 배터리 충전기  | TP4056 (ROVE-V 기준, 계획 중)        |
-| PCB 상태      | Placeholder (미완성)                  |
-| PSRAM 필수    | 8MB OPI (ESP-SR 사용)                |
+| 항목            | 사양                                          |
+|-----------------|-----------------------------------------------|
+| MCU             | ESP32-S3-WROOM-1-N16R8                        |
+| 모터 드라이버   | DRV8833PW (TSSOP-16)                          |
+| 마이크          | INMP441 I2S MEMS                              |
+| 서보 커넥터     | 3핀 2.54mm 헤더 × 2 (J5: SERVO1, J6: SERVO2) |
+| 서보 신호 GPIO  | GPIO12 (SERVO1/J5), GPIO11 (SERVO2/J6)        |
+| 배터리 보호     | DW01A + FS8205A (ROVE-V 동일)                |
+| 배터리 전압 모니터 | GPIO10 ADC (R6 100kΩ / R7 47kΩ 분압기)    |
+| USB             | USB-C 데이터 전용 (충전 없음)                 |
+| PCB 상태        | **R1 완성** — 라우팅 완료, Gerber 발주 가능  |
+| 보드 크기       | 60 × 50 mm                                   |
+| PSRAM 필수      | 8MB OPI (ESP-SR 사용)                         |
+
+> **주의 — GPIO 핀 할당:**
+> ROVE-SV R1 PCB에서 서보 신호핀은 **GPIO12/11**입니다.
+> I2S 마이크가 GPIO15/16/17을 사용하므로, 좌측 엣지에서 인접한
+> 빈 핀인 GPIO11/12를 서보에 할당했습니다.
+> 펌웨어의 `SERVO_BOOM_PIN` / `SERVO_BUCKET_PIN`은 자동으로
+> `CONFIG_ROVE_VARIANT_ROVE_SV` 선택 시 GPIO12/11로 설정됩니다.
+
+### 서보 커넥터 위치 (PCB 기준)
+
+| 레퍼런스 | 신호    | PCB 위치     | 핀 배열 (상→하)       |
+|----------|---------|-------------|----------------------|
+| J5       | SERVO1  | (50, 35mm)  | 1=GND, 2=VBAT, 3=PWM |
+| J6       | SERVO2  | (50, 43mm)  | 1=GND, 2=VBAT, 3=PWM |
 
 ### 전체 GPIO 핀 할당
 
-| 신호         | GPIO | 방향 | 기능                        |
-|--------------|------|------|-----------------------------|
-| LEFT_IN1     | 1    | OUT  | 좌 모터 방향 A              |
-| LEFT_IN2     | 2    | OUT  | 좌 모터 방향 B              |
-| RIGHT_IN1    | 3    | OUT  | 우 모터 방향 A              |
-| RIGHT_IN2    | 4    | OUT  | 우 모터 방향 B              |
-| DRV_SLEEP    | 5    | OUT  | 드라이버 절전               |
-| SERVO_BOOM   | 6    | OUT  | 붐 서보 PWM                 |
-| SERVO_BUCKET | 7    | OUT  | 버킷 서보 PWM               |
-| I2S_WS       | 15   | OUT  | INMP441 Word Select         |
-| I2S_SCK      | 16   | OUT  | INMP441 Bit Clock           |
-| I2S_SD       | 17   | IN   | INMP441 Serial Data         |
+| 신호         | GPIO | ESP32 모듈 pad | 방향 | 기능                                  |
+|--------------|------|---------------|------|---------------------------------------|
+| LEFT_IN1     | 1    | pad 39        | OUT  | DRV8833 AIN1 (좌 모터)               |
+| LEFT_IN2     | 2    | pad 38        | OUT  | DRV8833 AIN2 (좌 모터)               |
+| RIGHT_IN1    | 3    | pad 15 (IO3)  | OUT  | DRV8833 BIN1 (우 모터)               |
+| RIGHT_IN2    | 4    | pad 4         | OUT  | DRV8833 BIN2 (우 모터)               |
+| DRV_SLEEP    | 5    | pad 5         | OUT  | 드라이버 절전 (HIGH=동작)             |
+| IO0 / BOOT   | 0    | pad 27        | IN   | 부트 모드 선택 (BOOT 버튼)           |
+| STATUS_LED   | 18   | pad 18        | OUT  | 상태 LED                             |
+| VBAT_MON     | 10   | pad 10        | IN   | 배터리 전압 ADC (ADC1_CH9)           |
+| I2S_WS       | 15   | pad 15        | OUT  | INMP441 Word Select                  |
+| I2S_SCK      | 16   | pad 16        | OUT  | INMP441 Bit Clock                    |
+| I2S_SD       | 17   | pad 17        | IN   | INMP441 Serial Data                  |
+| **SERVO1**   | **12** | **pad 12** | **OUT** | **J5 붐 서보 PWM (LEDC CH0)**    |
+| **SERVO2**   | **11** | **pad 11** | **OUT** | **J6 버킷 서보 PWM (LEDC CH1)** |
+
+### 서보 제어 사양
+
+| 항목          | 사양                          |
+|---------------|-------------------------------|
+| PWM 주파수    | 50 Hz (주기 20ms)             |
+| 펄스폭 범위   | 500 µs (0°) ~ 2500 µs (180°) |
+| 중립 위치     | 1500 µs (90°)                 |
+| 제어 드라이버 | ESP-IDF LEDC (14-bit 해상도)  |
+| LEDC 채널     | CH0 = SERVO1, CH1 = SERVO2   |
+
+### PCB 상태 (R1)
+
+- 소스: `electronics/rove_sv/rove_sv.kicad_pcb`
+- 라우팅: freerouting 완료, **0 unconnected items**
+- DRC: 189 violations (shorting 29개 전부 J1 USB-C 내부 geometry false positive,
+  clearance 38개는 autorouter minor issue — 수동 DRC fix 전 ROVE-V와 동일 수준)
+- Gerbers: `electronics/rove_sv/gerbers/rove_sv_gerbers_r1_routed.zip` (JLCPCB 발주 가능)
+- DRU: JLCPCB 0.127mm 최소 규칙 (`electronics/rove_sv/rove_sv.kicad_dru`)
 
 ### 펌웨어 설정
 
@@ -400,6 +441,12 @@ CONFIG_ESP32S3_SPIRAM_SUPPORT=y
 CONFIG_SPIRAM_MODE_OCT=y
 CONFIG_SPIRAM_SPEED_80M=y
 ```
+
+빌드 시 `SERVO_BOOM_PIN=GPIO12`, `SERVO_BUCKET_PIN=GPIO11`로 자동 설정됩니다.
+
+### 배터리 보호 회로 (DW01A + FS8205A)
+
+ROVE-V와 동일. 자세한 내용은 [ROVE-V 배터리 보호 섹션](#배터리-보호-회로-dw01a--fs8205a)을 참조하세요.
 
 ---
 

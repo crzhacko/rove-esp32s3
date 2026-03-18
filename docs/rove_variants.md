@@ -1,40 +1,44 @@
 # ROVE Variant Comparison
 
-| Variant  | Motors | Servos | Voice (INMP441) | Board status   | sdkconfig fragment      |
-|----------|:------:|:------:|:---------------:|----------------|-------------------------|
-| ROVE     | ✓      |        |                 | placeholder    | sdkconfig.rove          |
-| ROVE-S   | ✓      | ✓      |                 | placeholder    | sdkconfig.rove_s        |
-| ROVE-V   | ✓      |        | ✓               | **routed PCB** | sdkconfig.rove_v        |
-| ROVE-SV  | ✓      | ✓      | ✓               | placeholder    | sdkconfig.rove_sv       |
-| ROVE-SVX | ✓      | ✓      | ✓ + extras      | placeholder    | sdkconfig.rove_svx      |
+| Variant  | Motors | Servos | Voice (INMP441) | Board status        | sdkconfig fragment      |
+|----------|:------:|:------:|:---------------:|---------------------|-------------------------|
+| ROVE     | ✓      |        |                 | placeholder         | sdkconfig.rove          |
+| ROVE-S   | ✓      | ✓      |                 | placeholder         | sdkconfig.rove_s        |
+| ROVE-V   | ✓      |        | ✓               | **routed PCB**      | sdkconfig.rove_v        |
+| ROVE-SV  | ✓      | ✓      | ✓               | **routed PCB (R1)** | sdkconfig.rove_sv       |
+| ROVE-SVX | ✓      | ✓      | ✓ + extras      | placeholder         | sdkconfig.rove_svx      |
 
-## Hardware summary (ROVE-V)
+## Hardware summary (ROVE-V / ROVE-SV)
 
-| Item       | Part              | Notes                                  |
-|------------|-------------------|----------------------------------------|
-| MCU        | ESP32-S3-WROOM-1  | 16 MB flash, 8 MB PSRAM (OPI)          |
-| Motor drv  | DRV8833PW         | Dual H-bridge, TSSOP-16                |
-| Charger    | TP4056 SOP-8      | 580 mA via 2 kΩ PROG, USB-C input      |
-| LDO        | XC6220B331MR      | VBAT → 3.3 V, SOT-23-5                 |
-| Microphone | INMP441           | I2S MEMS, LGA-6, L channel (GND→L/R)  |
-| Battery    | Single-cell LiPo  | JST PH 2-pin                           |
-| Motors     | TT gear motors ×2 | JST PH 2-pin each                      |
-| Board size | 60 × 50 mm        | Smaller than Arduino Uno (68.6×53.4mm) |
+| Item           | Part              | Notes                                          |
+|----------------|-------------------|------------------------------------------------|
+| MCU            | ESP32-S3-WROOM-1  | 16 MB flash, 8 MB PSRAM (OPI)                  |
+| Motor drv      | DRV8833PW         | Dual H-bridge, TSSOP-16                        |
+| Batt. protect  | DW01A + FS8205A   | Overcurrent/overcharge/overdischarge protection |
+| LDO            | XC6220B331MR      | VBAT → 3.3 V, SOT-23-5                         |
+| Microphone     | INMP441           | I2S MEMS, LGA-6, L channel (GND→L/R)          |
+| Servo (SV only)| 3-pin 2.54mm ×2   | J5 (SERVO1/GPIO12), J6 (SERVO2/GPIO11)         |
+| Battery        | Single-cell LiPo  | JST PH 2-pin                                   |
+| Motors         | TT gear motors ×2 | JST PH 2-pin each                              |
+| Board size     | 60 × 50 mm        | Smaller than Arduino Uno (68.6×53.4mm)         |
 
-## Pin assignment (ROVE-V)
+## Pin assignment
 
-| Signal       | GPIO | Direction |
-|--------------|------|-----------|
-| LEFT_IN1     | 1    | OUT       |
-| LEFT_IN2     | 2    | OUT       |
-| RIGHT_IN1    | 3    | OUT       |
-| RIGHT_IN2    | 4    | OUT       |
-| DRV_SLEEP    | 5    | OUT       |
-| SERVO_BOOM   | 6    | OUT (S only) |
-| SERVO_BUCKET | 7    | OUT (S only) |
-| I2S_WS       | 15   | OUT       |
-| I2S_SCK      | 16   | OUT       |
-| I2S_SD       | 17   | IN        |
+| Signal       | GPIO | Direction | ROVE-V | ROVE-SV |
+|--------------|------|-----------|:------:|:-------:|
+| LEFT_IN1     | 1    | OUT       | ✓      | ✓       |
+| LEFT_IN2     | 2    | OUT       | ✓      | ✓       |
+| RIGHT_IN1    | 3    | OUT       | ✓      | ✓       |
+| RIGHT_IN2    | 4    | OUT       | ✓      | ✓       |
+| DRV_SLEEP    | 5    | OUT       | ✓      | ✓       |
+| IO0/BOOT     | 0    | IN        | ✓      | ✓       |
+| STATUS_LED   | 18   | OUT       | ✓      | ✓       |
+| VBAT_MON     | 10   | IN (ADC)  | ✓      | ✓       |
+| I2S_WS       | 15   | OUT       | ✓      | ✓       |
+| I2S_SCK      | 16   | OUT       | ✓      | ✓       |
+| I2S_SD       | 17   | IN        | ✓      | ✓       |
+| SERVO1 (J5)  | 12   | OUT       |        | ✓       |
+| SERVO2 (J6)  | 11   | OUT       |        | ✓       |
 
 ## Building a variant
 
