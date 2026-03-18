@@ -1,0 +1,747 @@
+** Drc report for rove_sv.kicad_pcb **
+** Created on 2026-03-19T00:50:51+0900 **
+
+** Found 189 DRC violations **
+[shorting_items]: Items shorting two nets (nets /USB_D+ and /USB_D-)
+    Local override; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 25.2500 mm): Track [/USB_D-] on F.Cu, length 1.0420 mm
+[shorting_items]: Items shorting two nets (nets /CC1 and /USB_D-)
+    Local override; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 24.2500 mm): Track [/USB_D-] on F.Cu, length 1.0420 mm
+[shorting_items]: Items shorting two nets (nets GND and /USB_5V)
+    Local override; error
+    @(8.7000 mm, 21.7500 mm): Track [GND] on F.Cu, length 1.0700 mm
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1154 mm)
+    Rule: board setup constraints hole; error
+    @(7.5030 mm, 28.6850 mm): Track [GND] on F.Cu, length 0.4350 mm
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1154 mm)
+    Rule: board setup constraints hole; error
+    @(8.5450 mm, 28.2500 mm): Track [GND] on F.Cu, length 1.0420 mm
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1070 mm)
+    Rule: board_min_clearance; error
+    @(10.8240 mm, 14.8970 mm): Via [/VBAT] on F.Cu - B.Cu
+    @(10.3460 mm, 14.3900 mm): Track [GND] on F.Cu, length 8.4870 mm
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0770 mm)
+    Rule: board_min_clearance; error
+    @(52.7040 mm, 33.0000 mm): Track [/BOUT1] on F.Cu, length 3.0971 mm
+    @(50.7770 mm, 30.4120 mm): Via [/RIGHT_IN1] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0770 mm)
+    Rule: board_min_clearance; error
+    @(50.7770 mm, 30.4120 mm): Via [/RIGHT_IN1] on F.Cu - B.Cu
+    @(50.5140 mm, 30.8100 mm): Track [/BOUT1] on F.Cu, length 1.1360 mm
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1254 mm)
+    Rule: board_min_clearance; error
+    @(7.2680 mm, 15.8370 mm): Track [GND] on F.Cu, length 0.6109 mm
+    @(7.0940 mm, 15.2680 mm): Via [/VBAT] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0990 mm)
+    Rule: board_min_clearance; error
+    @(11.0010 mm, 26.8200 mm): Via [/3V3] on F.Cu - B.Cu
+    @(11.9125 mm, 27.0000 mm): Pad 2 [/EN] of R1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0930 mm)
+    Rule: board_min_clearance; error
+    @(7.3590 mm, 33.8330 mm): Via [/DW01_OC] on F.Cu - B.Cu
+    @(5.9230 mm, 33.3400 mm): Track [/VBAT] on F.Cu, length 1.6230 mm
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0808 mm)
+    Rule: board_min_clearance; error
+    @(7.3590 mm, 33.8330 mm): Via [/DW01_OC] on F.Cu - B.Cu
+    @(7.5460 mm, 33.3400 mm): Track [/VBAT] on F.Cu, length 0.5713 mm
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1080 mm)
+    Rule: board_min_clearance; error
+    @(56.0830 mm, 34.0830 mm): Track [/BOUT2] on F.Cu, length 0.9170 mm
+    @(57.0000 mm, 33.0000 mm): PTH pad 1 [/BOUT1] of J4
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0999 mm)
+    Rule: board_min_clearance; error
+    @(49.3810 mm, 27.6750 mm): Track [GND] on F.Cu, length 0.9192 mm
+    @(48.6740 mm, 27.6750 mm): Via [/AOUT2] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and GND)
+    Local override; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 21.7500 mm): Track [GND] on F.Cu, length 0.1550 mm
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1050 mm)
+    Rule: board_min_clearance; error
+    @(23.1280 mm, 32.1760 mm): Track [/IO0] on F.Cu, length 14.4810 mm
+    @(26.8250 mm, 32.6810 mm): Via [/STATUS_LED] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0688 mm)
+    Rule: board_min_clearance; error
+    @(45.3750 mm, 25.7250 mm): Via [/DRV_SLEEP] on F.Cu - B.Cu
+    @(39.8170 mm, 20.8300 mm): Track [GND] on F.Cu, length 8.7611 mm
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1030 mm)
+    Rule: board_min_clearance; error
+    @(36.0570 mm, 26.7060 mm): Track [/RIGHT_IN2] on F.Cu, length 9.7410 mm
+    @(34.9270 mm, 27.2090 mm): Via [/DRV_SLEEP] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1080 mm)
+    Rule: board_min_clearance; error
+    @(57.0000 mm, 35.0000 mm): Track [/BOUT2] on F.Cu, length 0.9170 mm
+    @(57.0000 mm, 33.0000 mm): PTH pad 1 [/BOUT1] of J4
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(7.3430 mm, 22.4150 mm): Via [/CC2] on F.Cu - B.Cu
+    @(7.1000 mm, 22.1100 mm): NPTH pad of J1
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1080 mm)
+    Rule: board_min_clearance; error
+    @(57.0000 mm, 9.0000 mm): Track [/VBAT] on F.Cu, length 0.9170 mm
+    @(57.0000 mm, 11.0000 mm): PTH pad 2 [/BATT_NEG] of J2
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0999 mm)
+    Rule: board_min_clearance; error
+    @(48.1930 mm, 28.8630 mm): Track [GND] on F.Cu, length 1.6801 mm
+    @(48.6740 mm, 27.6750 mm): Via [/AOUT2] on F.Cu - B.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1080 mm)
+    Rule: board_min_clearance; error
+    @(57.0000 mm, 11.0000 mm): PTH pad 2 [/BATT_NEG] of J2
+    @(57.0000 mm, 9.9170 mm): Track [/VBAT] on F.Cu, length 0.9170 mm
+[shorting_items]: Items shorting two nets (nets  and /CC1)
+    Local override; error
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+    @(7.1440 mm, 23.7500 mm): Track [/CC1] on F.Cu, length 1.4010 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(7.3430 mm, 22.4150 mm): Track [/CC2] on B.Cu, length 4.3350 mm
+    @(7.1000 mm, 22.1100 mm): NPTH pad of J1
+[shorting_items]: Items shorting two nets (nets /CC2 and )
+    Local override; error
+    @(8.5450 mm, 26.7500 mm): Track [/CC2] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0850 mm)
+    Rule: board_min_clearance; error
+    @(21.2500 mm, 30.9800 mm): Pad 13 [/USB_D-] of U1 on F.Cu
+    @(22.3850 mm, 31.4330 mm): Via [/IO0] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(5.9540 mm, 21.0260 mm): Track [/CC2] on F.Cu, length 1.9643 mm
+    @(7.1000 mm, 22.1100 mm): NPTH pad of J1
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0670 mm)
+    Rule: board_min_clearance; error
+    @(37.0290 mm, 26.1530 mm): Via [/RIGHT_IN1] on F.Cu - B.Cu
+    @(36.4500 mm, 25.6860 mm): Track [/DRV_SLEEP] on B.Cu, length 8.8860 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1010 mm)
+    Rule: board setup constraints hole; error
+    @(7.4530 mm, 27.5000 mm): Track [/USB_5V] on F.Cu, length 0.0707 mm
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1100 mm)
+    Rule: board_min_clearance; error
+    @(37.5900 mm, 28.2390 mm): Via [/RIGHT_IN2] on F.Cu - B.Cu
+    @(38.7500 mm, 28.4400 mm): Pad 30 [<no net>] of U1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1010 mm)
+    Rule: board setup constraints hole; error
+    @(9.6580 mm, 25.2950 mm): Track [/USB_5V] on B.Cu, length 3.1183 mm
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[shorting_items]: Items shorting two nets (nets /USB_5V and GND)
+    Local override; error
+    @(8.5450 mm, 22.5500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /CC2 and /USB_5V)
+    Local override; error
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+[shorting_items]: Items shorting two nets (nets /USB_D+ and )
+    Local override; error
+    @(8.5450 mm, 25.7500 mm): Track [/USB_D+] on F.Cu, length 3.9470 mm
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_D+ and )
+    Local override; error
+    @(8.0240 mm, 25.7500 mm): Track [/USB_D+] on F.Cu, length 0.5210 mm
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.1110 mm)
+    Rule: board_min_clearance; error
+    @(9.9890 mm, 9.0000 mm): Via [/STATUS_LED] on F.Cu - B.Cu
+    @(10.9125 mm, 9.0000 mm): Pad 2 [/LED_ANODE] of R3 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(7.4530 mm, 27.5000 mm): Via [/USB_5V] on F.Cu - B.Cu
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[shorting_items]: Items shorting two nets (nets /USB_D+ and /USB_D-)
+    Local override; error
+    @(8.5450 mm, 24.7500 mm): Track [/USB_D+] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2350 mm)
+    Rule: board setup constraints hole; error
+    @(21.2500 mm, 30.9800 mm): Pad 13 [/USB_D-] of U1 on F.Cu
+    @(22.3850 mm, 31.4330 mm): Via [/IO0] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(7.1000 mm, 22.1100 mm): NPTH pad of J1
+    @(7.3430 mm, 22.4150 mm): Via [/CC2] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0510 mm)
+    Rule: board setup constraints hole; error
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+    @(7.4530 mm, 27.5000 mm): Via [/USB_5V] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and /USB_5V)
+    Local override; error
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and /USB_5V)
+    Local override; error
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and /CC1)
+    Local override; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and GND)
+    Local override; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 21.7500 mm): Pad B12 [GND] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /CC1 and /USB_5V)
+    Local override; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /CC1 and /USB_D+)
+    Local override; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /CC1 and /USB_D-)
+    Local override; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_D+ and /USB_D-)
+    Local override; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_D+ and /USB_D-)
+    Local override; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_D- and /USB_D+)
+    Local override; error
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and /CC2)
+    Local override; error
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and GND)
+    Local override; error
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 28.2500 mm): Pad A12 [GND] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and GND)
+    Local override; error
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 28.2500 mm): Pad B1 [GND] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 28.2500 mm): Pad A12 [GND] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and /USB_5V)
+    Local override; error
+    @(8.5450 mm, 28.2500 mm): Pad A12 [GND] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 28.2500 mm): Pad B1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and /USB_5V)
+    Local override; error
+    @(8.5450 mm, 28.2500 mm): Pad B1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and /CC2)
+    Local override; error
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /CC2 and /USB_D+)
+    Local override; error
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0000 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[clearance]: Clearance violation (rule 'board_min_clearance' clearance 0.1270 mm; actual 0.0500 mm)
+    Rule: board_min_clearance; error
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 21.7500 mm): Pad B12 [GND] of J1 on F.Cu
+[shorting_items]: Items shorting two nets (nets /USB_5V and GND)
+    Local override; error
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 21.7500 mm): Pad B12 [GND] of J1 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2490 mm)
+    Rule: board setup constraints hole; error
+    @(11.9125 mm, 27.0000 mm): Pad 2 [/EN] of R1 on F.Cu
+    @(11.0010 mm, 26.8200 mm): Via [/3V3] on F.Cu - B.Cu
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(50.0000 mm, 35.0000 mm): Footprint J5
+    @(50.0000 mm, 43.0000 mm): Footprint J6
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(50.0000 mm, 35.0000 mm): Footprint J5
+    @(50.0000 mm, 28.0000 mm): Footprint U2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(50.0000 mm, 28.0000 mm): Footprint U2
+    @(57.0000 mm, 22.0000 mm): Footprint J3
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(50.0000 mm, 28.0000 mm): Footprint U2
+    @(57.0000 mm, 33.0000 mm): Footprint J4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(4.5000 mm, 25.0000 mm): Footprint J1
+    @(11.0000 mm, 27.0000 mm): Footprint R1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(4.5000 mm, 25.0000 mm): Footprint J1
+    @(11.0000 mm, 31.0000 mm): Footprint R2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(57.0000 mm, 22.0000 mm): Footprint J3
+    @(54.0000 mm, 20.0000 mm): Footprint C6
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(57.0000 mm, 22.0000 mm): Footprint J3
+    @(54.0000 mm, 24.0000 mm): Footprint C7
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(3.0000 mm, 17.0000 mm): Footprint R4
+    @(5.0000 mm, 14.0000 mm): Footprint C1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(6.5000 mm, 17.0000 mm): Footprint R5
+    @(5.0000 mm, 14.0000 mm): Footprint C1
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(34.0000 mm, 43.0000 mm): Footprint MK1
+    @(34.0000 mm, 40.0000 mm): Footprint C8
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(7.1440 mm, 23.7500 mm): Track [/CC1] on F.Cu, length 1.4010 mm
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(7.1440 mm, 23.7500 mm): Track [/CC1] on F.Cu, length 1.4010 mm
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.7500 mm): Track [/CC2] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.7500 mm): Track [/CC2] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.7500 mm): Track [/CC2] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 21.7500 mm): Pad B12 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 28.2500 mm): Pad A12 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 28.2500 mm): Pad B1 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Track [/USB_5V] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 25.7500 mm): Track [/USB_D+] on F.Cu, length 3.9470 mm
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 25.7500 mm): Track [/USB_D+] on F.Cu, length 3.9470 mm
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.0240 mm, 25.7500 mm): Track [/USB_D+] on F.Cu, length 0.5210 mm
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.0240 mm, 25.7500 mm): Track [/USB_D+] on F.Cu, length 0.5210 mm
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.7500 mm): Track [/USB_D+] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.7500 mm): Track [/USB_D+] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 25.2500 mm): Track [/USB_D-] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 25.2500 mm): Track [/USB_D-] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.2500 mm): Track [/USB_D-] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.2500 mm): Track [/USB_D-] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.7000 mm, 21.7500 mm): Track [GND] on F.Cu, length 1.0700 mm
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.7000 mm, 21.7500 mm): Track [GND] on F.Cu, length 1.0700 mm
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 21.7500 mm): Track [GND] on F.Cu, length 0.1550 mm
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 21.7500 mm): Track [GND] on F.Cu, length 0.1550 mm
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 28.2500 mm): Track [GND] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 28.2500 mm): Track [GND] on F.Cu, length 1.0420 mm
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 21.7500 mm): Pad A1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Pad A4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 21.7500 mm): Pad B12 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 23.7500 mm): Pad A5 [/CC1] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.7500 mm): Pad A6 [/USB_D+] of J1 on F.Cu
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 25.2500 mm): Pad A7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.2500 mm): Pad A8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 28.2500 mm): Pad A12 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 28.2500 mm): Pad B1 [GND] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Pad A9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 28.2500 mm): Pad A12 [GND] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 28.2500 mm): Pad B1 [GND] of J1 on F.Cu
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 27.4500 mm): Pad B4 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 26.7500 mm): Pad B5 [/CC2] of J1 on F.Cu
+    @(8.5450 mm, 25.7500 mm): Pad B6 [/USB_D+] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 24.2500 mm): Pad B7 [/USB_D-] of J1 on F.Cu
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 23.2500 mm): Pad B8 [<no net>] of J1 on F.Cu
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(8.5450 mm, 22.5500 mm): Pad B9 [/USB_5V] of J1 on F.Cu
+    @(8.5450 mm, 21.7500 mm): Pad B12 [GND] of J1 on F.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(60.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(59.9000 mm, 10.0000 mm): Reference field of J2
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(60.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(59.9000 mm, 23.0000 mm): Reference field of J3
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(60.0000 mm, 0.0000 mm): Segment on Edge.Cuts
+    @(59.9000 mm, 34.0000 mm): Reference field of J4
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(7.3430 mm, 22.4150 mm): Via [/CC2] on F.Cu - B.Cu
+    @(7.1000 mm, 22.1100 mm): NPTH pad of J1
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0510 mm)
+    Rule: board setup constraints; warning
+    @(7.4530 mm, 27.5000 mm): Via [/USB_5V] on F.Cu - B.Cu
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0000 mm)
+    Rule: board setup constraints; warning
+    @(7.3430 mm, 22.4150 mm): Via [/CC2] on F.Cu - B.Cu
+    @(7.1000 mm, 22.1100 mm): NPTH pad of J1
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.0510 mm)
+    Rule: board setup constraints; warning
+    @(7.4530 mm, 27.5000 mm): Via [/USB_5V] on F.Cu - B.Cu
+    @(7.1000 mm, 27.8900 mm): NPTH pad of J1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(12.0000 mm, 39.5000 mm): Footprint R6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(13.0000 mm, 36.0000 mm): Footprint Q1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(7.0000 mm, 36.0000 mm): Footprint U5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(19.0000 mm, 39.5000 mm): Footprint R7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Connector_PinHeader_2.54mm'.
+    Local override; warning
+    @(50.0000 mm, 35.0000 mm): Footprint J5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Connector_PinHeader_2.54mm'.
+    Local override; warning
+    @(50.0000 mm, 43.0000 mm): Footprint J6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.8000 mm, 8.1000 mm): Segment of U1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.8000 mm, 33.9500 mm): Segment of U1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(39.2000 mm, 8.1000 mm): Segment of U1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(6.4000 mm, 20.3000 mm): Segment of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(6.4000 mm, 29.7000 mm): Segment of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(58.8100 mm, 19.9400 mm): Rectangle of J3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.0000 mm, 15.3500 mm): Reference field of R4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(6.5000 mm, 15.3500 mm): Reference field of R5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(1.5900 mm, 16.3456 mm): Segment of C1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(8.4100 mm, 10.5900 mm): Segment of C1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.0000 mm, 39.5000 mm): Reference field of MK1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(32.1200 mm, 40.6400 mm): Rectangle of MK1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(50.0000 mm, 38.5000 mm): Reference field of J6
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(10.1450 mm, 25.0000 mm): Reference field of J1
+    @(11.0000 mm, 25.3500 mm): Reference field of R1
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(2.7729 mm, 16.2650 mm): Segment of R4 on F.Silkscreen
+    @(1.5900 mm, 16.3456 mm): Segment of C1 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(6.2729 mm, 16.2650 mm): Segment of R5 on F.Silkscreen
+    @(1.5900 mm, 16.3456 mm): Segment of C1 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(34.0000 mm, 39.5000 mm): Reference field of MK1
+    @(33.7387 mm, 39.2650 mm): Segment of C8 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(32.1200 mm, 40.6400 mm): Rectangle of MK1 on F.Silkscreen
+    @(33.7387 mm, 40.7350 mm): Segment of C8 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(58.8100 mm, 19.9400 mm): Rectangle of J3 on F.Silkscreen
+    @(54.0000 mm, 22.3200 mm): Reference field of C7
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(58.8100 mm, 19.9400 mm): Rectangle of J3 on F.Silkscreen
+    @(53.7387 mm, 24.7350 mm): Segment of C7 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(58.8100 mm, 19.9400 mm): Rectangle of J3 on F.Silkscreen
+    @(53.7387 mm, 20.7350 mm): Segment of C6 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(58.8100 mm, 19.9400 mm): Rectangle of J3 on F.Silkscreen
+    @(53.7387 mm, 23.2650 mm): Segment of C7 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(52.3100 mm, 30.7350 mm): Segment of U2 on F.Silkscreen
+    @(50.0000 mm, 30.5000 mm): Reference field of J5
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(48.6700 mm, 30.9200 mm): Segment of J5 on F.Silkscreen
+    @(50.0000 mm, 30.5000 mm): Reference field of J5
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(48.6700 mm, 30.9200 mm): Segment of J5 on F.Silkscreen
+    @(48.6700 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(48.6700 mm, 30.9200 mm): Segment of J5 on F.Silkscreen
+    @(48.6700 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(51.3300 mm, 30.9200 mm): Segment of J5 on F.Silkscreen
+    @(48.6700 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(51.3300 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+    @(51.3300 mm, 30.9200 mm): Segment of J5 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(50.0000 mm, 38.5000 mm): Reference field of J6
+    @(48.6700 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(48.6700 mm, 39.0800 mm): Segment of J5 on F.Silkscreen
+    @(50.0000 mm, 38.5000 mm): Reference field of J6
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(48.6700 mm, 39.0800 mm): Segment of J5 on F.Silkscreen
+    @(48.6700 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(51.3300 mm, 38.9200 mm): Segment of J6 on F.Silkscreen
+    @(48.6700 mm, 39.0800 mm): Segment of J5 on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

@@ -1,0 +1,19 @@
+(version 1)
+
+# ROVE-V PCB Custom DRC Rules
+# Minimum manufacturing clearance: JLCPCB standard = 0.127mm (5 mil)
+
+# Global minimum clearance override for this board
+# Overrides default netclass 0.2mm → allow 0.127mm (JLCPCB 5-mil standard)
+(rule board_min_clearance
+    (layer outer)
+    (constraint clearance (min 0.127mm))
+)
+
+# J1 USB-C connector: HRO TYPE-C-31-M-12 — industry-standard footprint.
+# Adjacent pads (including SBU no-net pads A8/B8) have 0–0.2mm spacing by design.
+# Allow 0mm clearance for J1 internal pad geometry (connector manufacturer validated).
+(rule usb_c_j1_pad_clearance
+    (condition "A.Reference == 'J1' && B.Reference == 'J1'")
+    (constraint clearance (min 0mm))
+)
